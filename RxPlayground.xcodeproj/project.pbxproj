@@ -43,7 +43,7 @@
 		E1378F221F1655050089F0E5 /* RxPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1378F261F1655050089F0E5 /* RxPlaygroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxPlaygroundTests.swift; sourceTree = "<group>"; };
 		E1378F281F1655050089F0E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1378F331F1656690089F0E5 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		E1378F331F1656690089F0E5 /* Basic.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Basic.playground; sourceTree = "<group>"; };
 		FD1F1CA637A5A34D22F31C32 /* Pods_RxPlaygroundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxPlaygroundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -81,7 +81,7 @@
 		E1378F051F1655040089F0E5 = {
 			isa = PBXGroup;
 			children = (
-				E1378F331F1656690089F0E5 /* MyPlayground.playground */,
+				E1378F331F1656690089F0E5 /* Basic.playground */,
 				E1378F101F1655040089F0E5 /* RxPlayground */,
 				E1378F251F1655050089F0E5 /* RxPlaygroundTests */,
 				E1378F0F1F1655040089F0E5 /* Products */,

@@ -8,7 +8,7 @@ import PlaygroundSupport
 var str = "Hello, playground"
 
 
-/*
+/*:
  
  # 目標: Int型の排出するシーケンス Observable を排出する
 
@@ -27,11 +27,9 @@ let firstObservaable = Observable<Int>
 
 
 
-/*
- 
-    Observable: ObservableType
- 
-    create() : Creates an observable sequence from a specified subscribe method implementation.
+/*:
+
+ ## create() : Creates an observable sequence from a specified subscribe method implementation.
  
 
     クロージャ内では, 戻り値 (Disposable) を返さなくてはならない.
@@ -52,11 +50,12 @@ let secondObservable = Observable<Int>
     }
 
 
-/*
+/*:
 
- 追記: 外部リソースを利用しているときは, 購読終了時にリソース解放が必要
- cf. 通信処理, データベースへのアクセス
- 購読終了時に実行すべき処理を定義できる.
+ ### 追記: 外部リソースを利用しているときは, 購読終了時にリソース解放が必要
+    
+        cf. 通信処理, データベースへのアクセス
+            購読終了時に実行すべき処理を定義できる.
 
  */
 
@@ -78,7 +77,7 @@ let thirdObservable = Observable<Int>
 
 
 
-/*
+/*:
 
  # 目標: Observable を購読する
 
@@ -99,9 +98,9 @@ let output2: Disposable = secondObservable
 
 
 
-/*
+/*:
 
-    subscribe() : Subscribes an event handler to an observable sequence
+ ## subscribe() : Subscribes an event handler to an observable sequence
  
     シーケンス Observable から排出された event を引数に,
     新しいイベントが発生するたびにクロージャが呼び出される.
@@ -124,36 +123,38 @@ let _ = thirdObservable
     }
     .dispose()  // リソース解放
 
-/*
+/*:
  
-    リソースを処分する. 
-    - 戻り値:　なし
+ ## リソースを処分する.
 
+ ```swift:
     /// Dispose resource
 
     func dispose() -> Void
- 
+ ```
+
  */
 
 
 
 
 
-/*
-    # 基本フロー
+/*:
+
+ # 基本フロー - まとめ
 
  
-    Observable
+    * Observable
 
-        1.生成 create() -----> 2.排出 on() 
+       > 1.生成 create() -----> 2.排出 on()
 
-    Observable => Disposable
+    * Observable  ------>  Disposable(購読を中断する場合)
  
-        3.購読 subscript()  -----> .next or .completed or .error
+       > 3.購読 subscript()  -----> .next or .completed or .error
 
-    Disposable
+    * Disposable
  
-        4.処分 dispose
+       > 4.処分 dispose
  
  */
 
