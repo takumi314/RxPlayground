@@ -19,6 +19,10 @@ import PlaygroundSupport
  */
 
 
+/// 
+PlaygroundPage.current.needsIndefiniteExecution = true
+
+
 
 struct Session {
     static func send<T: Request>(_ request: T) -> Observable<T.Response> {
