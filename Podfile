@@ -4,8 +4,8 @@
 target 'RxPlayground' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-  pod 'RxSwift'
-  pod 'RxCocoa'
+  pod 'RxSwift', '3.6.1'
+  pod 'RxCocoa', '3.6.1'
 
   # Pods for RxPlayground
 
