@@ -50,6 +50,7 @@ MyPlayground.playground/
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
 Pods/
+vendor/
 
 # Carthage
 #
@@ -68,3 +69,4 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
+.bundle
